@@ -1,0 +1,8 @@
+
+<div class="search-form">
+  Search: <input type="search" #searchTerm (keyup.enter)="search(searchTerm.value)" />
+  <button (click)="search(searchTerm.value)">Search</button>
+</div> 
+
+<app-orbit-list [satellites]="displayList"></app-orbit-list>
+
